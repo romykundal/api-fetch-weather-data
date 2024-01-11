@@ -18,8 +18,8 @@ npm install
 
 Create a .env file in the root directory of your project and configure the required environment variables:
 
-``` OPENWEATHERMAP_API_KEY=''
-``` MONGO_UI=''
+OPENWEATHERMAP_API_KEY=''
+MONGO_UI=''
 
 Replace the empty strings with your corresponding API keys and configurations.
 
