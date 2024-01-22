@@ -1,4 +1,4 @@
-# Nodejs Appplication RESTfull API
+# Nodejs Appplication RESTfull API with Unit test cases  in weather check app
 Create a simple Node.js application that fetches data from a public API (e.g., OpenWeatherMap) and displays relevant information on a basic web page. Use asynchronous programming techniques and ensure the code is well-organized and follows best practices....
 
 # Project Name
@@ -11,8 +11,10 @@ Ensure you have a stable Node.js version installed (e.g., Node.js 18).
 
 Run the following command to install the project dependencies:
 
-```bash
-npm install
+1. Install dependencies:
+
+   ```bash
+   npm install
 
 # Configuration
 
@@ -27,6 +29,18 @@ Replace the empty strings with your corresponding API keys and configurations.
 To start the application, run the following command:
 
 npm start
+
+
+## Unit Test Example
+
+In this example, we'll demonstrate a simple unit test for a JavaScript function using Mocha and Chai.
+
+### Running Tests
+
+To run the unit tests, follow these steps:
+
+npm run test
+
 
 
 License

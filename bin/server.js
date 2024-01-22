@@ -8,7 +8,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const server = createServer(app);
+// const server = createServer(app);
 
 //Setup Http-Logger Morgan Middleware
 app.use(logger('dev'));
@@ -36,6 +36,11 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/', async (req, res) => {
+	console.log("Welcome Rohit's world to learn deep level code.")
+  res.send({message: "Welcome Rohit's world to learn deep level code."});
+})
+
 app.get('/health', async (req, res) => {
 	console.log("ok! Health Check.")
   res.send('OK! Health Check.');
@@ -45,4 +50,6 @@ app.use('/api', itemsRoute);
 
 //Setup Port & Listening to Server
 const port = process.env.PORT || 3600;
-server.listen(port, () => console.log(`server running on port ${port}!!`));
+app.listen(port, () => console.log(`server running on port ${port}!!`));
+
+export default app;
