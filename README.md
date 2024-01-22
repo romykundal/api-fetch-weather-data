@@ -45,6 +45,3 @@ npm run test
 
 License
 This project is licensed under the MIT License.
-
-
-Adjust the "Project Name" and include any additional sections or details specific to your project.
